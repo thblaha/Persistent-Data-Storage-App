@@ -18,6 +18,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 // Routes
 // -----------------
 mongoose.connect("mongodb://user:password1@ds121203.mlab.com:21203/heroku_2z7j0jbv", { useNewUrlParser: true });
+// mongoose.connect('mongodb://localhost:27017/tododb')
 require('./routes/api-routes.js')(app);
 require('./routes/html-routes.js')(app);
 
